@@ -1,0 +1,10 @@
+digraph G {
+"map" -> "base_link"[label="Broadcaster: /linkbroadcaster\nAverage rate: 796.734 Hz\nMost recent transform: 973.199 ( 0.000 sec old)\nBuffer length: 4.654 sec\n"];
+"map" -> "odom"[label="Broadcaster: /projectplanner\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 973.199 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /gazebo\nAverage rate: 30.218 Hz\nMost recent transform: 973.188 ( 0.011 sec old)\nBuffer length: 4.633 sec\n"];
+"map" -> "world"[label="Broadcaster: /link1_broadcaster\nAverage rate: 10.182 Hz\nMost recent transform: 973.291 ( -0.092 sec old)\nBuffer length: 4.616 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 973.199"[ shape=plaintext ] ;
+ }->"map";
+}

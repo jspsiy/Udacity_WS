@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+
+<rosparam file="$(find capstone)/src/pathspecs.yaml" command="load" />
+
+  <arg name="map_file" default="$(find capstone)/etc/huskymap.yaml"/>
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+ 
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find capstone)/etc/capstone.rviz" />
+<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map world 100"/>
+<node pkg="capstone" name="project" type="capstonepath" output="screen"/>
+<node pkg="capstone" name="projectplanner" type="capstoneplanner" output="screen" launch-prefix="xterm -e" />
+<node pkg="capstone" name="projectmover" type="capstonemover" output="screen" />
+
+  <arg name="world_name" default="worlds/empty.world"/>
+
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/> <!-- world_name is wrt GAZEBO_RESOURCE_PATH environment variable -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+  </include>
+
+<!--<node pkg="tf" type="static_transform_publisher" name="linkbroadcaster" args="0 0 0 0 0 0 1 map odom 1" />-->
+<!--<node pkg="tf" type="static_transform_publisher" name="capstone_broadcaster" args="0 0 0 0 0 0 1 map odom" />-->
+</launch>

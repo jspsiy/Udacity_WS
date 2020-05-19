@@ -1,0 +1,8 @@
+prefix=/home/joshua/capstone_ws/devel
+
+Name: lattice_navigation_demos
+Description: Description of lattice_navigation_demos
+Version: 0.9.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

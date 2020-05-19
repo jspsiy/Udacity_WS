@@ -1,0 +1,283 @@
+; Auto-generated. Do not edit!
+
+
+(cl:in-package agv_control_msgs-msg)
+
+
+;//! \htmlinclude planData.msg.html
+
+(cl:defclass <planData> (roslisp-msg-protocol:ros-message)
+  ((header
+    :reader header
+    :initarg :header
+    :type std_msgs-msg:Header
+    :initform (cl:make-instance 'std_msgs-msg:Header))
+   (xp
+    :reader xp
+    :initarg :xp
+    :type (cl:vector cl:float)
+   :initform (cl:make-array 0 :element-type 'cl:float :initial-element 0.0))
+   (yp
+    :reader yp
+    :initarg :yp
+    :type (cl:vector cl:float)
+   :initform (cl:make-array 0 :element-type 'cl:float :initial-element 0.0))
+   (fip
+    :reader fip
+    :initarg :fip
+    :type (cl:vector cl:float)
+   :initform (cl:make-array 0 :element-type 'cl:float :initial-element 0.0))
+   (sp
+    :reader sp
+    :initarg :sp
+    :type (cl:vector cl:float)
+   :initform (cl:make-array 0 :element-type 'cl:float :initial-element 0.0))
+   (sectors
+    :reader sectors
+    :initarg :sectors
+    :type (cl:vector agv_control_msgs-msg:stringArray)
+   :initform (cl:make-array 0 :element-type 'agv_control_msgs-msg:stringArray :initial-element (cl:make-instance 'agv_control_msgs-msg:stringArray)))
+   (pz_control
+    :reader pz_control
+    :initarg :pz_control
+    :type (cl:vector cl:boolean)
+   :initform (cl:make-array 0 :element-type 'cl:boolean :initial-element cl:nil))
+   (grid
+    :reader grid
+    :initarg :grid
+    :type agv_control_msgs-msg:gridData
+    :initform (cl:make-instance 'agv_control_msgs-msg:gridData)))
+)
+
+(cl:defclass planData (<planData>)
+  ())
+
+(cl:defmethod cl:initialize-instance :after ((m <planData>) cl:&rest args)
+  (cl:declare (cl:ignorable args))
+  (cl:unless (cl:typep m 'planData)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name agv_control_msgs-msg:<planData> is deprecated: use agv_control_msgs-msg:planData instead.")))
+
+(cl:ensure-generic-function 'header-val :lambda-list '(m))
+(cl:defmethod header-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:header-val is deprecated.  Use agv_control_msgs-msg:header instead.")
+  (header m))
+
+(cl:ensure-generic-function 'xp-val :lambda-list '(m))
+(cl:defmethod xp-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:xp-val is deprecated.  Use agv_control_msgs-msg:xp instead.")
+  (xp m))
+
+(cl:ensure-generic-function 'yp-val :lambda-list '(m))
+(cl:defmethod yp-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:yp-val is deprecated.  Use agv_control_msgs-msg:yp instead.")
+  (yp m))
+
+(cl:ensure-generic-function 'fip-val :lambda-list '(m))
+(cl:defmethod fip-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:fip-val is deprecated.  Use agv_control_msgs-msg:fip instead.")
+  (fip m))
+
+(cl:ensure-generic-function 'sp-val :lambda-list '(m))
+(cl:defmethod sp-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:sp-val is deprecated.  Use agv_control_msgs-msg:sp instead.")
+  (sp m))
+
+(cl:ensure-generic-function 'sectors-val :lambda-list '(m))
+(cl:defmethod sectors-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:sectors-val is deprecated.  Use agv_control_msgs-msg:sectors instead.")
+  (sectors m))
+
+(cl:ensure-generic-function 'pz_control-val :lambda-list '(m))
+(cl:defmethod pz_control-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:pz_control-val is deprecated.  Use agv_control_msgs-msg:pz_control instead.")
+  (pz_control m))
+
+(cl:ensure-generic-function 'grid-val :lambda-list '(m))
+(cl:defmethod grid-val ((m <planData>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader agv_control_msgs-msg:grid-val is deprecated.  Use agv_control_msgs-msg:grid instead.")
+  (grid m))
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <planData>) ostream)
+  "Serializes a message object of type '<planData>"
+  (roslisp-msg-protocol:serialize (cl:slot-value msg 'header) ostream)
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'xp))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((bits (roslisp-utils:encode-single-float-bits ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)))
+   (cl:slot-value msg 'xp))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'yp))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((bits (roslisp-utils:encode-single-float-bits ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)))
+   (cl:slot-value msg 'yp))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'fip))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((bits (roslisp-utils:encode-single-float-bits ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)))
+   (cl:slot-value msg 'fip))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'sp))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((bits (roslisp-utils:encode-single-float-bits ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)))
+   (cl:slot-value msg 'sp))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'sectors))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (roslisp-msg-protocol:serialize ele ostream))
+   (cl:slot-value msg 'sectors))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'pz_control))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if ele 1 0)) ostream))
+   (cl:slot-value msg 'pz_control))
+  (roslisp-msg-protocol:serialize (cl:slot-value msg 'grid) ostream)
+)
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <planData>) istream)
+  "Deserializes a message object of type '<planData>"
+  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'header) istream)
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'xp) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'xp)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:aref vals i) (roslisp-utils:decode-single-float-bits bits))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'yp) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'yp)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:aref vals i) (roslisp-utils:decode-single-float-bits bits))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'fip) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'fip)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:aref vals i) (roslisp-utils:decode-single-float-bits bits))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'sp) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'sp)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:aref vals i) (roslisp-utils:decode-single-float-bits bits))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'sectors) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'sectors)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:setf (cl:aref vals i) (cl:make-instance 'agv_control_msgs-msg:stringArray))
+  (roslisp-msg-protocol:deserialize (cl:aref vals i) istream))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'pz_control) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'pz_control)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:setf (cl:aref vals i) (cl:not (cl:zerop (cl:read-byte istream)))))))
+  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'grid) istream)
+  msg
+)
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<planData>)))
+  "Returns string type for a message object of type '<planData>"
+  "agv_control_msgs/planData")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'planData)))
+  "Returns string type for a message object of type 'planData"
+  "agv_control_msgs/planData")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<planData>)))
+  "Returns md5sum for a message object of type '<planData>"
+  "f3df86da21172dbd8bb9f18e14c1164e")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'planData)))
+  "Returns md5sum for a message object of type 'planData"
+  "f3df86da21172dbd8bb9f18e14c1164e")
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<planData>)))
+  "Returns full string definition for message of type '<planData>"
+  (cl:format cl:nil "Header header~%~%float32[] xp~%float32[] yp~%float32[] fip~%float32[] sp~%~%stringArray[] sectors~%bool[] pz_control~%~%gridData grid~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: agv_control_msgs/stringArray~%string[] data~%~%================================================================================~%MSG: agv_control_msgs/gridData~%arrayData[] xGrid~%arrayData[] yGrid~%arrayData[] timeInGrid~%arrayData[] timeOutGrid~%~%================================================================================~%MSG: agv_control_msgs/arrayData~%float32[] data~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'planData)))
+  "Returns full string definition for message of type 'planData"
+  (cl:format cl:nil "Header header~%~%float32[] xp~%float32[] yp~%float32[] fip~%float32[] sp~%~%stringArray[] sectors~%bool[] pz_control~%~%gridData grid~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: agv_control_msgs/stringArray~%string[] data~%~%================================================================================~%MSG: agv_control_msgs/gridData~%arrayData[] xGrid~%arrayData[] yGrid~%arrayData[] timeInGrid~%arrayData[] timeOutGrid~%~%================================================================================~%MSG: agv_control_msgs/arrayData~%float32[] data~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <planData>))
+  (cl:+ 0
+     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'header))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'xp) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'yp) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'fip) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'sp) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'sectors) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ (roslisp-msg-protocol:serialization-length ele))))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'pz_control) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 1)))
+     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'grid))
+))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <planData>))
+  "Converts a ROS message object to a list"
+  (cl:list 'planData
+    (cl:cons ':header (header msg))
+    (cl:cons ':xp (xp msg))
+    (cl:cons ':yp (yp msg))
+    (cl:cons ':fip (fip msg))
+    (cl:cons ':sp (sp msg))
+    (cl:cons ':sectors (sectors msg))
+    (cl:cons ':pz_control (pz_control msg))
+    (cl:cons ':grid (grid msg))
+))

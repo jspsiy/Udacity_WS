@@ -1,0 +1,2 @@
+capstone
+-DCATKIN_DEVEL_PREFIX=/home/joshua/capstone_ws/devel -DCMAKE_INSTALL_PREFIX=/home/joshua/capstone_ws/install -G Unix Makefiles

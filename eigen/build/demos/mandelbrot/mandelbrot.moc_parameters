@@ -1,0 +1,7 @@
+-I/home/joshua/eigen
+-I/home/joshua/eigen/build
+-I/usr/include/qt4
+-DNDEBUG
+-o
+/home/joshua/eigen/build/demos/mandelbrot/mandelbrot.moc
+/home/joshua/eigen/demos/mandelbrot/mandelbrot.h

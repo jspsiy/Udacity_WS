@@ -1,0 +1,301 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4d8ee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4d8ee.dir/build.make CMakeFiles/cmTC_4d8ee.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4d8ee.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_4d8ee.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_4d8ee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4d8ee.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4d8ee.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4d8ee/fast' failed
+make: *** [cmTC_4d8ee/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a05ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a05ce.dir/build.make CMakeFiles/cmTC_a05ce.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a05ce.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_a05ce.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'
+CMakeFiles/cmTC_a05ce.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a05ce.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a05ce.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a05ce/fast' failed
+make: *** [cmTC_a05ce/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d8af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d8af.dir/build.make CMakeFiles/cmTC_1d8af.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d8af.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_1d8af.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'
+CMakeFiles/cmTC_1d8af.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1d8af.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1d8af.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1d8af/fast' failed
+make: *** [cmTC_1d8af/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d749b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d749b.dir/build.make CMakeFiles/cmTC_d749b.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d749b.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_d749b.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+CMakeFiles/cmTC_d749b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d749b.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d749b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d749b/fast' failed
+make: *** [cmTC_d749b/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1de78/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1de78.dir/build.make CMakeFiles/cmTC_1de78.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1de78.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_1de78.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+CMakeFiles/cmTC_1de78.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1de78.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1de78.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1de78/fast' failed
+make: *** [cmTC_1de78/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63fc5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63fc5.dir/build.make CMakeFiles/cmTC_63fc5.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63fc5.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_63fc5.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'
+CMakeFiles/cmTC_63fc5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_63fc5.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_63fc5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_63fc5/fast' failed
+make: *** [cmTC_63fc5/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_48702/fast"
+/usr/bin/make -f CMakeFiles/cmTC_48702.dir/build.make CMakeFiles/cmTC_48702.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48702.dir/src.cxx.o
+/usr/bin/c++     -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_48702.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+CMakeFiles/cmTC_48702.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_48702.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_48702.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_48702/fast' failed
+make: *** [cmTC_48702/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bac7e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bac7e.dir/build.make CMakeFiles/cmTC_bac7e.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bac7e.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1    -o CMakeFiles/cmTC_bac7e.dir/CheckSymbolExists.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+CMakeFiles/cmTC_bac7e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_bac7e.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_bac7e.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bac7e/fast' failed
+make: *** [cmTC_bac7e/fast] Error 2
+
+File /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40ff3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40ff3.dir/build.make CMakeFiles/cmTC_40ff3.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40ff3.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1    -o CMakeFiles/cmTC_40ff3.dir/CheckSymbolExists.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+CMakeFiles/cmTC_40ff3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_40ff3.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_40ff3.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_40ff3/fast' failed
+make: *** [cmTC_40ff3/fast] Error 2
+
+File /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b623/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b623.dir/build.make CMakeFiles/cmTC_8b623.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8b623.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1    -o CMakeFiles/cmTC_8b623.dir/CheckSymbolExists.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+CMakeFiles/cmTC_8b623.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8b623.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8b623.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8b623/fast' failed
+make: *** [cmTC_8b623/fast] Error 2
+
+File /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test SUPERLU_HAS_GLOBALLU_T failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97a4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97a4f.dir/build.make CMakeFiles/cmTC_97a4f.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97a4f.dir/src.cxx.o
+/usr/bin/c++    -I/usr/include/superlu  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -DSUPERLU_HAS_GLOBALLU_T   -o CMakeFiles/cmTC_97a4f.dir/src.cxx.o -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/joshua/eigen/build/CMakeFiles/CMakeTmp/src.cxx:7:3: error: ‘GlobalLU_t’ was not declared in this scope
+   GlobalLU_t glu;
+   ^
+CMakeFiles/cmTC_97a4f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_97a4f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_97a4f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_97a4f/fast' failed
+make: *** [cmTC_97a4f/fast] Error 2
+
+Source file was:
+
+typedef int int_t;
+#include <supermatrix.h>
+#include <slu_util.h>
+int main(void)
+{
+  GlobalLU_t glu;
+  return 0;
+}
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb172/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb172.dir/build.make CMakeFiles/cmTC_cb172.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb172.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_cb172.dir/CheckSymbolExists.c.o   -c /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cb172
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb172.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_cb172.dir/CheckSymbolExists.c.o  -o cmTC_cb172 -rdynamic 
+CMakeFiles/cmTC_cb172.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cb172.dir/build.make:97: recipe for target 'cmTC_cb172' failed
+make[1]: *** [cmTC_cb172] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cb172/fast' failed
+make: *** [cmTC_cb172/fast] Error 2
+
+File /home/joshua/eigen/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/joshua/eigen/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96756/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96756.dir/build.make CMakeFiles/cmTC_96756.dir/build
+make[1]: Entering directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96756.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_96756.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_96756
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96756.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_96756.dir/CheckFunctionExists.c.o  -o cmTC_96756 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_96756.dir/build.make:97: recipe for target 'cmTC_96756' failed
+make[1]: *** [cmTC_96756] Error 1
+make[1]: Leaving directory '/home/joshua/eigen/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_96756/fast' failed
+make: *** [cmTC_96756/fast] Error 2
+
+
