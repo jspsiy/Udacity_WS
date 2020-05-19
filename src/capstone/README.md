@@ -22,7 +22,7 @@ This is a project done by Joshua Siy implementing a small project that uses ROS.
 4. A launch file is provided. To use type: roslaunch capstone capstone.launch 
 5. You will be prompted by multiple screens but pay attention to the xterm window because you'll need to input the initial location and position of the robot with respect to the map.
 
-##Description:
+## Description:
 * The project is composed of 3 main codes: mainpath, mainplanner, and mainmover.cpp along with self developed headerfiles and self-made libraries.
 
 * mainpath generates the path for the robot to follow which uses classes and linkedlists consisting of nodes with x and y positional value. This code generates a marker for RVIZ that describes the rectangular path the robot wants to follow.
@@ -63,7 +63,7 @@ This is a project done by Joshua Siy implementing a small project that uses ROS.
 
 * A promise and future is used in the project.-- Student used it although it is not entirely necessary and was just used for learning purposes.
 
-##References:
+## References:
 * https://github.com/larics/pure_pursuit 
 * https://github.com/xiaoxiae/PurePursuitAlgorithm
 * https://www.chiefdelphi.com/t/paper-implementation-of-the-adaptive-pure-pursuit-controller/166552 
